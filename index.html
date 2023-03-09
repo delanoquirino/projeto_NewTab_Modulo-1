@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="header_logo">
+          <img src="images/Ellipse 13.png" alt="logo" />
+        </div>
+        <div class="header_title">
+          <h1>Controle Financeiro</h1>
+        </div>
+        <nav class="header_menu">
+          <img src="images/menu.png" alt="menu" />
+          <ul class="header_menu-list">
+            <li>Limpar dados</li>
+            <li>Cadastro de transações</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form>
+        <div class="form_data">
+          <div class="form_input">
+            <label for="transação">Tipo de transação</label>
+            <select name="transação" id="transação" pla>
+              <option value="compra">compra</option>
+              <option value="venda">venda</option>
+            </select>
+          </div>
+          <div class="form_input">
+            <label for="mercadoria">Nome da mercadoria</label>
+            <input
+              type="text"
+              name="mercadoria"
+              id="mercadoria"
+              placeholder="Input"
+            />
+          </div>
+          <div class="form_input">
+            <label for="valor">Valor</label>
+            <input type="text" name="valor" id="valor" placeholder="R$ 0,00" />
+          </div>
+        </div>
+
+        <button class="form_button">Adicionar transação</button>
+      </form>
+
+      <div class="extract">
+        <h2>Extrato de transações</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Mercadorias</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>+</span> Lorem ipsum dolor sit amet consectetur</td>
+              <td>R$ 12.999,99</td>
+            </tr>
+            <tr>
+              <td><span>-</span> Quis nostrud exercitation</td>
+              <td>R$ 99,99</td>
+            </tr>
+            <tr>
+              <td><span>+</span> Lorem ipsum</td>
+              <td>R$ 9,99</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>R$ 12.909,99 <span class="balance">[lucro]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
